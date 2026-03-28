@@ -112,11 +112,16 @@ if st.button("Generate Campaign", type="primary"):
         prompt = f"""
         You are an expert political strategist. Here is the live data: {combined_payload}
         
-        Write an aggressive, emotional 3-paragraph advocacy campaign demanding the city fulfill the community request.
-        Call out the city's excuse and use the injury and 311 data as proof of danger.
+        The community explicitly requested: "{issue_data['request']}"
+        The City's excuse: "{issue_data['excuse']}"
         
-        Exactly after the first paragraph, you MUST include this exact tag to trigger the image tool:
-        [IMAGE: A photorealistic, gritty street view of an NYC intersection heavily congested with traffic, highly detailed]
+        Write an aggressive, emotional advocacy campaign. 
+        1. Start with a LARGE HEADER (###) for the campaign title.
+        2. In the very first paragraph, explicitly state the community's exact request and attack the city's excuse.
+        3. Use **bold text** to highlight the injury and 311 data as mathematical proof of danger.
+        
+        Exactly after the first paragraph, you MUST include this exact tag:
+        [IMAGE: A photorealistic, gritty street view of an NYC street reflecting the issue in the community request, highly detailed, dramatic lighting]
         """
         
         text_response = client.models.generate_content(
