@@ -1,11 +1,11 @@
 # Civic Lens
 
-**An AI Civic Advocacy Engine — for the people, by the people.**
+**An Agentic AI Civic Advocacy Engine — for the people, by the people.**
 
 ---
 
 ## About the Project
-Civic Lens is an AI-powered platform designed to empower citizens by making civic engagement more accessible, informed, and actionable. It helps individuals better understand public issues, voice concerns, and advocate for change in their communities.
+Developed an Agentic AI-powered civic tech platform utilizing a dual-agent architecture to transform natural language citizen complaints into actionable political advocacy campaigns. Built entirely on Google Cloud using the Gemini GenAI SDK, the system employs a "Needs Agent" to autonomously query NYC Open Data, extract geospatial intent, and rank dormant municipal requests. A secondary "Evidence Agent" then cross-references this data with live 311 calls and crash stats, generating hyper-local, data-backed advocacy emails and visual dashboards that bridge the gap between grassroots needs and City Council funding.
 
 ---
 
